@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>팝업창만들기</title>
+ <script>
+  window.open("http://www.apple.com","popup","width=450height=450, left=250, top=100")
+ </script>
+</head>
+<body>
+ <img src="images/window_object_1.jpg" usemap="#intro" alt="신간 책 소개">
+ <map name="intro" id="intro">
+  <area shape="rect" coords="0,0,50,50" href="#" alt="창 닫기"
+  onclick="window.close();"> 
+  <!-- window.open의 반대 method임 -->
+ </map>
+
+</body>
+</html>
